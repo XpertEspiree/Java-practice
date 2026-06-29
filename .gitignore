@@ -1,0 +1,14 @@
+# Java compiled files
+*.class
+
+# Compiled output directory
+out/
+
+# IntelliJ IDEA
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
