@@ -1,14 +1,7 @@
 import java.util.Scanner;
 class rough{
-   static int fib(int n){
-    if(n==0) return 0;
-    if(n==1) return 1;
-    return fib(n-1)+fib(n-2);
-   }
 
-
-
-    public static void main(String[] args){
+ public static void main(String[] args){
    /* //integer types   
     int n=5;
     byte by=66;
@@ -54,17 +47,22 @@ class rough{
     System.out.println(n+ " is a Odd Number.");
 */
 
-
     Scanner sc=new Scanner(System.in);
-    System.out.print("Enter the Terms You want to Print: ");
-    int n=sc.nextInt();
-    for(int i=0; i<n; i++){
-        System.out.println(fib(i) + "");
-    }
-    
-
-
-
+    System.out.print("Enter the name of Employee: ");
+    String name=sc.nextLine();
+    System.out.print("Enter the id of Employee: ");
+    int id=sc.nextInt();
+    System.out.print("Enter the Salary of Employee: ");
+    double salary=sc.nextDouble();
+    System.out.println("Name: " +name);
+    System.out.println("Id: " +id);
+    System.out.println("Salary: " +(int)salary);
+      if(salary<=10000)
+    System.out.println("Employee is in InternShip.");
+    else if(salary<=30000)
+    System.out.println("Employee is in Mid Post.");
+    else if(salary<=0)
+    System.out.println("Employee works for Free.");
 
     }
 }
