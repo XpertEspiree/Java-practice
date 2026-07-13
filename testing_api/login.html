@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+  <button onclick="sendLogin()">Login</button>
+
+  <script>
+    function sendLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // This is the actual "API call" — sending data to your backend
+      fetch("http://localhost:8080/login", {
+        method: "POST",
+        body: username + "&" + password
+      })
+      .then(response => response.text())
+      .then(data => alert(data));
+    }
+  </script>
+
+</body>
+</html>
