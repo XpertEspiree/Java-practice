@@ -1,13 +1,14 @@
-public class Student {
+class Student{
+	String name;
+	int rollNo;
+	public static void main(String[] args){
+		Student s1=new Student();
 
-    String Std; // Variable
+		s1.name="Binod";
+		s1.rollNo= 20;
 
-    void study() { // Method
-        System.out.println("Studying Java");
-    }
+		System.out.println("Name is " +s1.name);
+		System.out.println("RollNo is " +s1.rollNo);
+	}
 
-    public static void main(String[] args) {
-        Student s = new Student();
-        s.study();
-    }
 }
