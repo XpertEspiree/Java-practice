@@ -14,4 +14,4 @@ class factorial{
 System.out.println("The factorial of " +n+ " is " +fact);
 		sc.close();
 	}
-}
+}  
