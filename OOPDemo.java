@@ -86,3 +86,15 @@ public class OOPDemo {
         List<Employee> employees = new ArrayList<>();
 
         employees.add(new Manager("Aarav", 101, 40000, 8000));
+        employees.add(new Developer("Sita", 102, 30000, 6));
+        Intern intern = new Intern("Rita", 103, 15000);
+        employees.add(intern);
+
+        System.out.println("---- Employee Salary Report ----");
+        for (Employee e : employees) {
+            e.displayInfo();   // Polymorphism: calls correct calculateSalary()
+        }
+
+        intern.payToBank();    // Interface method
+    }
+}

@@ -16,4 +16,4 @@ class fact{
 			sc.close();
 	}
 }
-//mugi laado khaa 
+// ta muji lai kei aaudaina kya ho kati factorial ko matra code lekeko vanya gulla jasto 
